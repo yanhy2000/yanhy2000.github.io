@@ -2,37 +2,3 @@ body{
     background-image:url('https://api.sunweihu.com/api/bing1/api.php');
 }
 
-#id{
-    font-size: 1.2em;
-    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #333;
-    -webkit-text-size-adjust: none;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    background: #96b97d;
-    min-width: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-.row{
-    font-size: 1.2em;
-    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #333;
-    -webkit-text-size-adjust: none;
-    border: 0;
-    padding: 0;
-    width: 100%;
-    max-width: 1260px;
-    margin: 0 auto;
-    overflow: hidden;
-    min-width: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
