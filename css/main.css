@@ -1,256 +1,38 @@
 body{
-    <Style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        /*背景模糊*/
-        .bg {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            background: url("https://api.sunweihu.com/api/bing1/api.php") no-repeat fixed;
-            background-size: cover;
-            box-sizing: border-box;
-            z-index: 1;
-        }
-
-        .bg:after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            /* 从父元素继承 background 属性的设置 */
-            background: inherit;
-            filter: blur(2px);
-            z-index: 2;
-        }
-
-
-        .content {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            z-index: 3;
-        }
-    </Style>
-</head>
-
-<body>
-    <div class="bg">
-        <div class="content">背景模糊</div>
-    </div>
-</body>
+    background-image:url('https://api.sunweihu.com/api/bing1/api.php');
 }
 
-/*-------------头部-------------*/
-#header{
-    width:960px;
-    color:white;
-    border-bottom:dashed 1px white;
-    margin:0 auto;
-    margin-bottom:10px;
+#id{
+    font-size: 1.2em;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    -webkit-text-size-adjust: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: #96b97d;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
-
-.logo_title{
-    float:left;
-}
-
-.logo_title h3{
-    font-size:30px;
-    margin-top:14px;
-    font-family:"Adobe Garamond Pro Bold" "宋体";
-}
-.logo_title p{
-    font-size:20px;
-}
-
-/*---------------------------------*/
-.navi{
-    float:right;
-    margin-top:66px;
-}
-.navi a{
-    color:white;
-    text-decoration:none;
-}
-
-.navi ul {
-    list-style:none;
-}
-.navi ul li{
-    display:inline;
-    margin-right:8px;
-    border:1px solid white;
-    padding:4px 8px;
-    border-radius:6px;
-    background-color:rgba(255,255,255,0.15);
-}
-.clear{
-    clear:both;
-}
-
-/*----------------主体-----------------*/
-#wrapper{
-    width:960px;
-    margin:0 auto;
-    margin-bottom:15px;
-}
-.main{
-    width:610px;
-    background-color:white;
-    border-radius:8px;
-    float:left;
-    padding:20px;
-}
-.item_img{
-    float:left;
-    margin:10px;
-    margin-top:4px;
-}
-.item_img img{
-    width:80px;
-    height:80px;
-}
-.item_content{
-    margin-left:100px;
-}
-
-.item_content h3{
-    font-size:22px;
-    color:#a5612d;
-    margin:0;
-}
-.item_info{
-    font-size:12px;
-    font-style:italic;
-    margin:0;
-    color:#999;
-}
-.item_desc{
-    font-size:14px;
-    margin:0;
-    color:gray;
-    margin-top:10px;
-    padding-left:5px;
-    border-left:solid 1px #999;
-}
-
-.item{
-    border-bottom:dashed 1px #999;
-    padding :20px;
-}
-.sidebar{
-    width:300px;
-    background-color:white;
-    border-radius:8px;
-    float:right;
-    padding-top:10px;
-}
-
-.author_img img{
-    width:120px;
-    height:120px;
-    border-radius:10px;
-}
-
-.author_img{
-    width:120px;
-    height:120px;
+.row{
+    font-size: 1.2em;
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    -webkit-text-size-adjust: none;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 1260px;
     margin: 0 auto;
-
-}
-
-.author_info{
-    margin: 10px 10px;
-    padding:0;
-    border:solid #ddd 1px;
-    border-radius:8px;
-    background-color:#eee;
-
-}
-
-.author_info h4{
-    margin:0;
-    padding:0;
-    text-align:center;
-    font-weight:bold;
-}
-
-
-.article h3{
-    font-style:italic;
-    margin-left:10px;
-    border-bottom:dashed 1px #aaa;
-    padding-bottom:4px;
-}
-
-.article ul {
-    list-style:none;
-    padding:0;
-    margin-left:40px;
-}
-
-.site_info{
-    border-top :dashed 1px #aaa;
-}
-.site_info p {
-    text-align:center;
-    font-size:12px;
-    color:gray;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*---------------尾部-----------------*/
-#footer{
-    width:960px;
-    height:100px;
-    margin:0 auto;
-    background-color:bluee;
-    border-top:dashed white 1px;
-}
-
-#footer .left{
-    color:white;
-    float:left;
-    margin-top:10px;
-}
-
-#footer .right{
-    color:white;
-    float:right;
-    font-size:14px;
-
-}
-
-#footer .right ul {
-    margin-top:10px;
-    list-style:none;
-}
-
-#footer .right ul li {
-    display:inline-block;
-    margin-right:5px;
+    overflow: hidden;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
